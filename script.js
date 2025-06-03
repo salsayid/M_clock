@@ -26,4 +26,4 @@ function updateCountdown() {
     document.getElementById("seconds").innerText = seconds;
 
 }
-updateCountdown();
+setInterval(updateCountdown, 1000);
