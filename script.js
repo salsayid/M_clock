@@ -4,15 +4,16 @@
 
 //1. setting target date/time
 const targetDate = new Date("2025-07-01T00:00:00").getTime();
-function updateCountain() {
+function updateCountdown() {
     const now = new Date().getTime();
     const timeLeft = targetDate - now;
 
     if (timeLeft <= 0){
         document.getElementById("countdown").innerText = "It's time.";
         return;
-
     }
+
+    console.log("timeLeft:", timeLeft);
 
     const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
     const hours = Math.floor(timeLeft / (1000 * 60 * 60)  % 24);
@@ -23,5 +24,6 @@ function updateCountain() {
     document.getElementById("hours").innerText = hours;
     document.getElementById("minutes").innerText = minutes;
     document.getElementById("seconds").innerText = seconds;
-}
 
+}
+updateCountdown();
