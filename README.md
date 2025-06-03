@@ -2,7 +2,8 @@
 countdown clock for my goat
 
 
-http://127.0.0.1:5500/index.html 
+https://salsayid.github.io/M_clock/ 
+
 
 ## To run this simple html site:
 
