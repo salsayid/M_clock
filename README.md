@@ -13,3 +13,7 @@ https://salsayid.github.io/M_clock/
 ### 4.) Find project files, navigate to index.html
 ### 5.) Right click on index.html and view it in finder or files
 ### 6.) After you have found index.html, double click the file and it should open in a webpage
+
+-
+
+#### or just click the link at the top
