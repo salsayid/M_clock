@@ -19,7 +19,7 @@ https://salsayid.github.io/M_clock/
 #### 1.) Clone or fork this repository
 #### 2.) Open editor of choice (I recommend VSCode)
 #### 3.) Open project in IDE
-#### 4.) Find project files, navigate to index.html
+#### 4.) Find project files, navigate to ```index.html```
 #### 5.) Right click on index.html and view it in finder or files
 #### 6.) After you have found index.html, double click the file and it should open in a webpage
 
