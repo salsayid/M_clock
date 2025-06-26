@@ -1,6 +1,6 @@
 //ok now ima just speedrun this ridiculous english time. oy bruv you get me????
 
-const targetDateBrit = new Date("2025-06-30T18:00:00-05:00").getTime();
+const targetDateBrit = new Date("2025-06-27T18:00:00-05:00").getTime();
 
 function updateCountdown2() {
   const now = new Date().getTime();

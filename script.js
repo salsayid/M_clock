@@ -3,7 +3,7 @@
 //she's ahead by +6 hours sheesh
 
 //1. setting target date/time
-const targetDate = new Date("2025-07-01T00:00:00").getTime();
+const targetDate = new Date("2025-06-28T00:00:00").getTime();
 function updateCountdown() {
     const now = new Date().getTime();
     const timeLeft = targetDate - now;
