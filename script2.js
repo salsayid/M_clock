@@ -23,20 +23,23 @@ function updateCountdown2() {
   const hours = Math.floor((timeLeft / (1000 * 60 * 60)) % 24);
   const minutes = Math.floor((timeLeft / (1000 * 60)) % 60);
   const seconds = Math.floor((timeLeft / 1000) % 60);
+  const milliseconds = Math.floor((timeLeft % 1000));
 
   const d = document.getElementById("days2");
   const h = document.getElementById("hours2");
   const m = document.getElementById("minutes2");
   const s = document.getElementById("seconds2");
+  const mi = document.getElementById("milliseconds2");
 
-  if (d && h && m && s) {
+  if (d && h && m && s && mi) {
     d.innerText = days;
     h.innerText = hours;
     m.innerText = minutes;
     s.innerText = seconds;
+    mi.innerText = milliseconds;
   } else {
     console.error("sums wrong gang");
   }
 }
 
-setInterval(updateCountdown2, 1000);
+setInterval(updateCountdown2, 10);
