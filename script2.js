@@ -15,7 +15,8 @@ function updateCountdown2() {
 
   if (timeLeft <= 0) {
     const countdownBox = document.getElementById("countdown2");
-    if (countdownBox) countdownBox.innerText = "It's time.";
+    if (countdownBox) countdownBox.innerText = "IT'S TIME.";
+    triggerCrazyEffect2();
     return;
   }
 
@@ -37,6 +38,32 @@ function updateCountdown2() {
   } else {
     console.error("sums wrong gang");
   }
+}
+
+//confetti code hahahaha
+function triggerCrazyEffect2() {
+    if (!window.confetti) {
+        const script = document.createElement('script');
+        script.src = 'https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js';
+        script.onload = () => {
+            window.confetti && window.confetti({
+                particleCount: 200,
+                spread: 90,
+                origin: { y: 0.6 }
+            });
+            document.body.classList.add('crazy-shake');
+            setTimeout(() => document.body.classList.remove('crazy-shake'), 1000);
+        };
+        document.body.appendChild(script);
+    } else {
+        window.confetti({
+            particleCount: 200,
+            spread: 90,
+            origin: { y: 0.6 }
+        });
+        document.body.classList.add('crazy-shake');
+        setTimeout(() => document.body.classList.remove('crazy-shake'), 1000);
+    }
 }
 
 setInterval(updateCountdown2, 1000);
